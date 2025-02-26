@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.task-form-container {
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .error-message {
+    color: var(--red-500);
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .p-calendar {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  :host ::ng-deep {
+    .p-calendar,
+    .p-dropdown {
+      width: 100%;
+    }
+
+    .p-inputtextarea {
+      min-height: 100px;
+    }
+
+    .ng-invalid.ng-touched {
+      border-color: var(--red-500);
+    }
+  }

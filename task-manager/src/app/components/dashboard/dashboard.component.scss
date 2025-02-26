@@ -1,0 +1,115 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: var(--surface-ground);
+}
+
+.dashboard-header {
+  background: var(--surface-card);
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .app-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.dashboard-content {
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--surface-section);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+
+  .p-input-icon-left {
+    flex: 1;
+    max-width: 400px;
+
+    i {
+      color: var(--text-color-secondary);
+    }
+
+    input {
+      width: 100%;
+      padding-left: 2.5rem;
+    }
+  }
+
+  .table-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p-dropdown {
+      min-width: 200px;
+    }
+  }
+}
+
+.table-title {
+  h2 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    color: var(--text-color-secondary);
+    font-size: 0.875rem;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+:host ::ng-deep {
+  .p-tag {
+    min-width: 80px;
+    justify-content: center;
+  }
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-header {
+  margin-bottom: 1rem;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .username {
+    color: var(--text-color);
+    font-weight: 500;
+  }
+} 
